@@ -14,8 +14,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "."),
-      "server-only": path.resolve(__dirname, "tests/unit/mocks/server-only.js"),
+      "@": path.resolve(import.meta.dirname, "."),
+      "server-only": path.resolve(import.meta.dirname, "tests/unit/mocks/server-only.js"),
     },
   },
 });
